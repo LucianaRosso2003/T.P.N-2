@@ -4,13 +4,14 @@ from PIL import Image
 import random
 #Proceso de edición de imagen por método K-Means
 def filtro_Kmeans(ruta: str, colores: int = 8) -> Image:
-     """ Aplica una cuantización de colores usando el algoritmo K-Means a una imagen.Este filtro reduce la cantidad de colores en la imagen original a un número específico de clusters,
-        generando una versión simplificada basada en agrupaciones de colores dominantes. También muestra la imagen original junto a la modificada.
+     """ Aplica una cuantización  usando el algoritmo K-Means a una imagen.Este filtro reduce
+        la cantidad de colores en la imagen original a un número específico  de colores,
+        generando una versión simplificada basada en agrupaciones de colores denominadas clusters. 
         Parámetros:
         ruta (str): Ruta al archivo de imagen.
         colores (int): Número de colores (clusters) a utilizar en la cuantización. Por defecto es 8.
         Retorna:
-        Image: Imagen en formato Pillow que contiene la original y la versión procesada una al lado de la otra."""
+        Image: Imagen en formato Pillow."""
     
     
 
