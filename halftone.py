@@ -28,12 +28,12 @@ def get_grid_coords(h, w, dot_size, angle_deg):
     return positions
 
 # Filtro halftone principal
-def filtro_halftone(ruta:str, dot_size:int=10, angle_deg:list=None)-> Image:
+def filtro_halftone(ruta:str, dot_size:int=5, angle_deg:list=None)-> Image:
      """ Aplica un filtro Halftone a una imagen en escala de colores RGB. Este filtro simula el patrón de puntos usado en impresión, con diferentes ángulos para cada canal de color
-    (rojo, verde y azul). Cuanto más oscura la región, mayor es el tamaño del punto.
+    (rojo, verde y azul). Cuanto más clara la región, mayor es el tamaño del punto.
     Parámetros:
         ruta (str): Ruta al archivo de imagen.
-        dot_size (int): Tamaño base de los puntos. Debe ser positivo. Por defecto es 10.
+        dot_size (int): Tamaño base de los puntos. Debe ser positivo. Por defecto es 5.
         angle_deg (list): Lista de tres ángulos de rotación (uno por canal R, G, B). Si no se proporciona, se usan valores por defecto.
         Retorna:
         Image: Imagen procesada con el filtro halftone aplicada."""
